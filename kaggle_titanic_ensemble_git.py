@@ -61,4 +61,4 @@ y_test.reset_index(drop=True, inplace=True)
 # Create the final dataframe for submission to Kaggle.com
 final = pd.concat([pass_numb, one_or_zero], axis=1, keys=['PassengerId', 'Survived'])
 
-final.to_csv('kaggle_titanic_SVC_GBC_XGB_stacked_tuned.csv', index = False)
+final.to_csv('kaggle_titanic_SVC_GBC_XGB_ensemble_tuned.csv', index = False)
