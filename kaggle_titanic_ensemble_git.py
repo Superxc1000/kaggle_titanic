@@ -56,8 +56,6 @@ def decider(x):
 # Convert probablity to binary.
 one_or_zero = unweighted_p_of_one.apply(decider)
 
-y_test.reset_index(drop=True, inplace=True)
-
 # Create the final dataframe for submission to Kaggle.com
 final = pd.concat([pass_numb, one_or_zero], axis=1, keys=['PassengerId', 'Survived'])
 
